@@ -22,11 +22,11 @@ def random_predict(number:int=np.random.randint(1, 100)) -> int:
         
         elif predict_number > number:
             mx = predict_number - 1
-            predict_number = (mn + mx) // 2
+            predict_number = round((mn + mx) // 2)
             
         elif predict_number < number:
             mn = predict_number + 1
-            predict_number = (mn + mx) // 2
+            predict_number = round((mn + mx) // 2)
             
     return count
 
